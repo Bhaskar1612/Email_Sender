@@ -57,11 +57,10 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
 def protected_route(current_user: User = Depends(get_current_user)):
     return {"message": f"Hello, {current_user.email}!"}
 
-CLIENT_ID = "774611051832-q446pib18hdj68r80lp6rmcd77cerb36.apps.googleusercontent.com"
-CLIENT_SECRET = "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"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 REDIRECT_URI = "http://localhost:8000/oauth2callback"
 SCOPE = "https://www.googleapis.com/auth/gmail.send"
-api_key = "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"
 
 
 @app.get("/check_gmail")
