@@ -13,7 +13,7 @@ def send_email_via_gmail(sender_email, recipient_email, subject, content, access
     credentials = Credentials(
         token=access_token,
         refresh_token=refresh_token,
-        token_uri='https://oauth2.googleapis.com/token',
+        token_uri='',
         client_id='',
         client_secret=''
     )

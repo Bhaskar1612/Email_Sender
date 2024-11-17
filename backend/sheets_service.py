@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Path to your Google API credentials
-SERVICE_ACCOUNT_FILE = '/home/bhaskar/Projects/Email/backend/credentials.json'
+SERVICE_ACCOUNT_FILE = ''
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 credentials = service_account.Credentials.from_service_account_file(
