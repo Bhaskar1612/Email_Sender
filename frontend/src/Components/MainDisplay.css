@@ -1,0 +1,58 @@
+/* src/styles/MainDisplay.css */
+.main-display {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.main-display h2 {
+    margin-top: 10px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-display p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+}
+
+.send-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.send-options button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-options button:hover {
+    background-color: #0056b3;
+}
