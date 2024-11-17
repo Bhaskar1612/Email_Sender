@@ -14,8 +14,8 @@ def send_email_via_gmail(sender_email, recipient_email, subject, content, access
         token=access_token,
         refresh_token=refresh_token,
         token_uri='https://oauth2.googleapis.com/token',
-        client_id='774611051832-q446pib18hdj68r80lp6rmcd77cerb36.apps.googleusercontent.com',
-        client_secret='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'
+        client_id='',
+        client_secret=''
     )
 
     # Refresh the credentials if they have expired
