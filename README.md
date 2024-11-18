@@ -134,13 +134,13 @@ The backend is built using FastAPI, a modern Python framework for building fast 
 - File upload support for google import sheet.(User must enable sheets api in their own google account) (must contain following columns only Email,Subject,Content,Time,Company_Name,Name,Template)
 - 
 - Responsive UI: Styled using modern CSS for a visually appealing and mobile-friendly interface.(Well in order to get real-time updates, user must relaod the page, as websocket could not be implemented due to time constraint)
-- 
+
 # Contributing
 If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. Contributions are always welcome!
-- 
+
 # Issues and Support
 If you encounter any issues or have questions, please open an issue in the repository or reach out at [your email/contact info].
-- 
+
 # Acknowledgments
 This project uses:
 - FastAPI for the backend.
@@ -148,6 +148,6 @@ This project uses:
 - PostgreSQL for the database.
 - SendGrid for email delivery.
 - Google for email delivery and sheets-import.
-- 
-Contact
+  
+# Contact
 For feedback or suggestions, feel free to reach out via kashyapbhaskar1612@gmail.com.
