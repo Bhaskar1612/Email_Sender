@@ -76,7 +76,7 @@ ngrok http 8000
 
 ## Creator walkthrough
 The backend is built using FastAPI, a modern Python framework for building fast and efficient APIs. It handles all the business logic, including:
-
+- 
 - User Authentication: Sign up and sign in with JWT-based token authentication.
 - Email Sending via gmail and sendgrid
 - Schedule emails for future delivery using Celery workers.
@@ -84,23 +84,23 @@ The backend is built using FastAPI, a modern Python framework for building fast 
 - Csv file upload. (must contain following columns only Email,Subject,Content,Time,Company_Name,Name,Template)
 - Email Customization by Replacing placeholders ({name}, {company}) in templates.
 - Database: PostgreSQL is used for storing user and email-related data.
-
+- 
 - Once all necessary id and secrets have been added to the code, it can be deployed to use.
 
 
 
 ## User Walk Through (Any person using the app, not the one who has hosted it)
 - The frontend is built with React and provides a user-friendly interface for interacting with the email-sending application. It includes:
-
+-
 - Sign Up and Sign In Pages: Users can register and log in to the application.
-  
+-
 - Main Display Page:
 - Displays the user’s profile and all emails sent by them. Only emails snet via sendgrid will show delivey status when webhook is triggered. Those sent via gmail will not show this as gmail does not provide this option. Send status will be available for both however.
 - Allows users to select between Gmail and Sendgrid options for sending emails.
-  
+-
 - Gmail:
 - Leads user to an authentication page if not already authenticated where users provide access to their gmail account for sending(no other access). [In order to use this feature in testing phase, one must mention the email_id as collaborator while making google service account]
-
+-
 - SendGrid:
 - If not already given the sendgrid api key to the application. It will lead to a page where user must enter their api key after getting it from sendgrid website.
 - Process to Get SendGrid API Key
@@ -127,28 +127,27 @@ The backend is built using FastAPI, a modern Python framework for building fast 
 - From the left sidebar, navigate to Settings > Mail Settings > Event Webhook.
 - Enable the Event Webhook toggle.
 - Paste your exposed endpoint (e.g., https://abcd1234.ngrok.io/webhook/sendgrid) into the HTTP POST URL field.
-  
+- 
 - Email Customization Form:
 - Custome meail by giving all necessary data - Input fields for required template data (name, company, etc.).
 - File upload support for CSV files.(must contain following columns only Email,Subject,Content,Time,Company_Name,Name,Template)
 - File upload support for google import sheet.(User must enable sheets api in their own google account) (must contain following columns only Email,Subject,Content,Time,Company_Name,Name,Template)
-  
+- 
 - Responsive UI: Styled using modern CSS for a visually appealing and mobile-friendly interface.(Well in order to get real-time updates, user must relaod the page, as websocket could not be implemented due to time constraint)
-
+- 
 # Contributing
 If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. Contributions are always welcome!
-
+- 
 # Issues and Support
 If you encounter any issues or have questions, please open an issue in the repository or reach out at [your email/contact info].
-
+- 
 # Acknowledgments
 This project uses:
-FastAPI for the backend.
-React for the frontend.
-PostgreSQL for the database.
-SendGrid for email delivery.
-Google for email delivery and sheets-import.
-
-
+- FastAPI for the backend.
+- React for the frontend.
+- PostgreSQL for the database.
+- SendGrid for email delivery.
+- Google for email delivery and sheets-import.
+- 
 Contact
 For feedback or suggestions, feel free to reach out via kashyapbhaskar1612@gmail.com.
