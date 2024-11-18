@@ -138,7 +138,7 @@ The backend is built using FastAPI, a modern Python framework for building fast 
 If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. Contributions are always welcome!
 
 # Issues and Support
-If you encounter any issues or have questions, please open an issue in the repository or reach out at [your email/contact info].
+If you encounter any issues or have questions, please open an issue in the repository or reach out at kashyapbhaskar1612@gmail.com.
 
 # Acknowledgments
 This project uses:
@@ -149,4 +149,4 @@ This project uses:
 - Google for email delivery and sheets-import.
   
 # Contact
-For feedback or suggestions, feel free to reach out via kashyapbhaskar1612@gmail.com.
+For feedback or suggestions, feel free to reach out via bhaskarkashyap1612@gmail.com.
