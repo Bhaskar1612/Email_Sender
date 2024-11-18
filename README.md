@@ -84,7 +84,6 @@ The backend is built using FastAPI, a modern Python framework for building fast 
 - Csv file upload. (must contain following columns only Email,Subject,Content,Time,Company_Name,Name,Template)
 - Email Customization by Replacing placeholders ({name}, {company}) in templates.
 - Database: PostgreSQL is used for storing user and email-related data.
-- 
 - Once all necessary id and secrets have been added to the code, it can be deployed to use.
 
 
